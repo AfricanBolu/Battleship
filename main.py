@@ -55,8 +55,8 @@ def count_hit_ships(board):
 
 
 create_ship(hidden_board)
-print('Hidden board: ')
-print_board(hidden_board)
+# print('Hidden board: ')
+# print_board(hidden_board)
 print('\n\n Guess board: ')
 print_board(guess_board)
 for turn in range(5):
