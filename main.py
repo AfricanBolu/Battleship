@@ -31,15 +31,15 @@ def create_ship(ship_board):
 
 
 def get_ship_location():
-    chosen_row = input("Enter a row 1-8: ")
+    chosen_row = input("Enter a row 1-7: ")
     try:
         while chosen_row not in '12345678':
-            print('Please enter a valid row: ')
-            chosen_row = input("Enter a row 1-8")
-        chosen_col = input("Enter a column 1-8: ").upper()
+            print('Please enter a valid row!! ')
+            chosen_row = input("Enter a row 1-7: ")
+        chosen_col = input("Enter a column A-H: ").upper()
         while chosen_col not in 'ABCDEFGH':
-            print('Please enter a valid column: ')
-            chosen_col = input("Enter a column 1-8: ").upper()
+            print('Please enter a valid column!! ')
+            chosen_col = input("Enter a column A-H: ").upper()
         return int(chosen_row) - 1, letter_to_number[chosen_col]
     except TimeoutError:
         print('Error occurred.')
